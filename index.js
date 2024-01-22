@@ -33,5 +33,5 @@ exports.handler = (event, context, callback) => {
         <p><strong>Message:</strong><br>${event.message}</p>`,
   };
 
-  transporter.sendMail(mailOptions, done(null, _body));
+  transporter.sendMail(mailOptions, done(null, event));
 };
